@@ -60,8 +60,7 @@ If the product entertains with plot but does not raise accuracy of these actions
 
 | File | What it is |
 | --- | --- |
-| [docs/WHITEPAPER.ru.md](docs/WHITEPAPER.ru.md) | Full original-language spec (part 1) |
-| [docs/WHITEPAPER.ru-2.md](docs/WHITEPAPER.ru-2.md) | Same cloth, part 2 (AI, roles, onboarding, acceptance) |
+| [docs/WHITEPAPER.ru.md](docs/WHITEPAPER.ru.md) | Full original-language spec (the long cloth) |
 | [docs/WHITEPAPER.md](docs/WHITEPAPER.md) | Same idea in English, structured |
 | [docs/ROADMAP.md](docs/ROADMAP.md) | Step-by-step what to build, in order |
 | [docs/SKILLS.md](docs/SKILLS.md) | First-wave skill catalog |
