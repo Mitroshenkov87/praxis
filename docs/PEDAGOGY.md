@@ -20,9 +20,13 @@ A frame is a skeleton with holes:
 
 The lesson trains the skeleton, then swaps the object. That is the “same frame, other thing” drill.
 
+Authoring schemas: [DATA.md](DATA.md).
+
 ## Error
 
 Show the broken slot. Show the working phrase. Do not console. Do not invent a story about why they missed it.
+
+Screen: [SCREENS.md](SCREENS.md#error--broken-slot).
 
 ## Review
 
@@ -42,10 +46,38 @@ Reject a generated or authored line if:
 
 A human editor is the last gate. Status on each item: draft / rejected / accepted / allowed-to-generate-from.
 
+```mermaid
+flowchart TD
+  In[Candidate line: authored or model]
+  Q1{Checkable function?}
+  Q2{Romance / sex fluff?}
+  Q3{Emotion instead of action?}
+  Q4{Character / private life / hero praise / small talk?}
+  Ed{Human editor status}
+  OutShow[May show / may generate-from]
+  OutDrop[Discard before learner sees]
+  In --> Q1
+  Q1 -->|no| OutDrop
+  Q1 -->|yes| Q2
+  Q2 -->|yes| OutDrop
+  Q2 -->|no| Q3
+  Q3 -->|yes| OutDrop
+  Q3 -->|no| Q4
+  Q4 -->|yes| OutDrop
+  Q4 -->|no| Ed
+  Ed -->|draft or rejected| OutDrop
+  Ed -->|accepted| OutShow
+  Ed -->|allowed_to_generate_from| OutShow
+```
+
+**Decision:** filter runs **before** UI binding. Goal-dialogue transcripts never append a discarded turn. Architecture layer: `ai-filter` in [ARCHITECTURE.md](ARCHITECTURE.md).
+
 ## Stars and hints
 
 Stars are a quiet reward. They convert into a hint. They are not a social league.
 
+Rate (documented in [DATA.md](DATA.md)): **5 stars = 1 hint** until playtests change it.
+
 ## Placement
 
-If the person already knows the early material, do not trap them. Let them pass 0–2 fast.
+If the person already knows the early material, do not trap them. Let them pass 0–2 fast. See [ONBOARDING.md](ONBOARDING.md).
