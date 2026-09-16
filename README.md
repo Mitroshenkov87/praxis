@@ -105,8 +105,8 @@ If the product entertains with plot but does not raise accuracy of these actions
 
 | File | What it is |
 | --- | --- |
-| [docs/WHITEOPAPER.ru.md](docs/WHITEOPAPER.ru.md) | Full original-language spec (the long cloth) |
-| [docs/WHITEOPAPER.md](docs/WHITEOPAPER.md) | Same idea in English, structured |
+| [docs/WHITEPAPER.ru.md](docs/WHITEPAPER.ru.md) | Full original-language spec (the long cloth) |
+| [docs/WHITEPAPER.md](docs/WHITEPAPER.md) | Same idea in English, structured |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Android layers, modules, data flow |
 | [docs/DATA.md](docs/DATA.md) | JSON schemas, progress model, filled skill examples |
 | [docs/SCREENS.md](docs/SCREENS.md) | Navigation and screen contracts |
