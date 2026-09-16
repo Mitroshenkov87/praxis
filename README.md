@@ -18,7 +18,7 @@ Read in this order when you begin implementation:
 6. [docs/SKILLS.md](docs/SKILLS.md) · [docs/ROLES.md](docs/ROLES.md) · [docs/PEDAGOGY.md](docs/PEDAGOGY.md) · [docs/ONBOARDING.md](docs/ONBOARDING.md) — content and pedagogy detail
 7. [docs/ROADMAP.md](docs/ROADMAP.md) — stage summary linked to BUILD.md
 
-Russian original of the long product cloth: [docs/WHITEPAPER.ru.md](docs/WHITEPAPER.ru.md).
+Russian original of the long product cloth: [docs/WHITEOPAPER.ru.md](docs/WHITEOPAPER.ru.md).
 
 ## Why this exists
 
@@ -106,7 +106,7 @@ If the product entertains with plot but does not raise accuracy of these actions
 | File | What it is |
 | --- | --- |
 | [docs/WHITEPAPER.ru.md](docs/WHITEPAPER.ru.md) | Full original-language spec (the long cloth) |
-| [docs/WHITEPAPER.md](docs/WHITEOPAPER.md) | Same idea in English, structured |
+| [docs/WHITEPAPER.md](docs/WHITEPAPER.md) | Same idea in English, structured |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Android layers, modules, data flow |
 | [docs/DATA.md](docs/DATA.md) | JSON schemas, progress model, filled skill examples |
 | [docs/SCREENS.md](docs/SCREENS.md) | Navigation and screen contracts |
