@@ -2,7 +2,7 @@
 
 A practical A1 trainer. Android. First pair: English for Russian speakers.
 
-Implementation maps: [ARCHITECTURE.md](ARCHITECTURE.md) · [DATA.md](DATA.md) · [SCREENS.md](SCREENS.md) · [BUILD.md](BUILD.md). Russian long cloth: [WHITEPAPER.ru.md](WHITEOPAPER.ru.md).
+Implementation maps: [ARCHITECTURE.md](ARCHITECTURE.md) · [DATA.md](DATA.md) · [SCREENS.md](SCREENS.md) · [BUILD.md](BUILD.md). Russian long cloth: [WHITEPAPER.ru.md](WHITEPAPER.ru.md).
 
 ## 1. Product sentence
 
