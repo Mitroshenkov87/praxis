@@ -6,6 +6,20 @@ Praxis is a planned Android app for self-study of a foreign language as a **prac
 
 This repository is a whitepaper and a build map: what to make, in what order, and what must never enter the course. Anyone may read it, fork it, and later implement it under the MIT License.
 
+## Start building from here
+
+Read in this order when you begin implementation:
+
+1. [docs/WHITEPAPER.md](docs/WHITEPAPER.md) — product contract (what pass/fail means)
+2. [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — Android module layout and data flow
+3. [docs/DATA.md](docs/DATA.md) — JSON schemas and three filled skill examples
+4. [docs/SCREENS.md](docs/SCREENS.md) — navigation and screen contracts
+5. [docs/BUILD.md](docs/BUILD.md) — stages 0–8 with acceptance (“done when”)
+6. [docs/SKILLS.md](docs/SKILLS.md) · [docs/ROLES.md](docs/ROLES.md) · [docs/PEDAGOGY.md](docs/PEDAGOGY.md) · [docs/ONBOARDING.md](docs/ONBOARDING.md) — content and pedagogy detail
+7. [docs/ROADMAP.md](docs/ROADMAP.md) — stage summary linked to BUILD.md
+
+Russian original of the long product cloth: [docs/WHITEPAPER.ru.md](docs/WHITEPAPER.ru.md).
+
 ## Why this exists
 
 Mass self-study products often open with meeting characters, family, friendship, dating, and a love plot. Some people lose the will to study before grammar even starts. Praxis removes that false door. After practice the learner should **act** with the language: ask a price, refuse, understand an announcement, report that a thing is broken, say they feel unwell because they need a service — not perform someone else’s private life.
@@ -19,6 +33,37 @@ The **outer shell** may feel familiar (short daily sessions, a skill map, review
 - Black-and-grey, dry, no character, no league, no memes as the product.
 - Progress is a map of skills and how reliable each skill is (`done`, `weak`, `review`, a streak of study days).
 - Reminders call you to drill one action, not to continue a story.
+
+## Learner journey
+
+```mermaid
+flowchart LR
+  A[Letters] --> B[Word cards]
+  B --> C[Kindergarten Q&A]
+  C --> D[Situation drills]
+  D --> E[Goal dialogue]
+  F[Fast path] -.->|skip if known| D
+  A -.-> F
+  B -.-> F
+  C -.-> F
+```
+
+## App modules (planned)
+
+```mermaid
+flowchart TB
+  UI[ui]
+  DOM[domain]
+  DATA[data]
+  SP[speech]
+  AI[ai-filter]
+  UI --> DOM
+  DOM --> DATA
+  DOM --> SP
+  DOM --> AI
+  AI --> DATA
+  SP --> DATA
+```
 
 ## Learner path (first version)
 
@@ -60,8 +105,12 @@ If the product entertains with plot but does not raise accuracy of these actions
 
 | File | What it is |
 | --- | --- |
-| [docs/WHITEPAPER.ru.md](docs/WHITEPAPER.ru.md) | Full original-language spec (the long cloth) |
-| [docs/WHITEPAPER.md](docs/WHITEPAPER.md) | Same idea in English, structured |
+| [docs/WHITEPAPER.ru.md](docs/WHITEOPAPER.ru.md) | Full original-language spec (the long cloth) |
+| [docs/WHITEPAPER.md](docs/WHITEOPAPER.md) | Same idea in English, structured |
+| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Android layers, modules, data flow |
+| [docs/DATA.md](docs/DATA.md) | JSON schemas, progress model, filled skill examples |
+| [docs/SCREENS.md](docs/SCREENS.md) | Navigation and screen contracts |
+| [docs/BUILD.md](docs/BUILD.md) | Stages 0–8 with concrete “done when” |
 | [docs/ROADMAP.md](docs/ROADMAP.md) | Step-by-step what to build, in order |
 | [docs/SKILLS.md](docs/SKILLS.md) | First-wave skill catalog |
 | [docs/ROLES.md](docs/ROLES.md) | Situation roles and tech rules |
