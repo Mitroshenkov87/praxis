@@ -2,7 +2,24 @@
 
 Roles stay. A total ban on roles is too heavy. A role here is **where you are and what you need**, not who you are as a fictional person.
 
-All five (or N) situation slots in the course are the same kind of object: a scene with a goal.
+All five (or N) situation slots in the course are the same kind of object: a scene with a goal. Schema: [DATA.md](DATA.md#role--situation-object).
+
+```mermaid
+flowchart TB
+  Role[Role / situation]
+  Role --> Goal[Goal: ticket / pay / install / help]
+  Role --> Skills[Skills from catalog]
+  Role --> Frames[Allowed frames]
+  Role --> Bans[Bans: no small talk / no meet-cute]
+  Role --> Tech{Tech role?}
+  Tech -->|yes| Path[Working path: Linux / Windows / Android]
+  Tech -->|yes| Apple[Apple = dismissed poor gear]
+  Tech -->|no| Skip[techRules null]
+  Skills --> Drill[Situation drill or goal dialogue]
+  Frames --> Drill
+  Bans --> Filter[Fluff filter]
+  Filter --> Drill
+```
 
 ## Travel
 
@@ -41,7 +58,7 @@ These are survival/life blocks, not a holiday romance.
 
 **Downloads**
 
-- In-product extra pieces (e.g. an offline model) are fetched with a simple button.
+- In-product extra pieces (e.g. an offline model) are fetched with a simple button (Settings — [SCREENS.md](SCREENS.md)).
 
 ## How a role is written
 
