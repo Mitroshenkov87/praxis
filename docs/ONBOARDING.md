@@ -2,6 +2,8 @@
 
 Assume nothing: no English, no Latin alphabet.
 
+Screens: [SCREENS.md](SCREENS.md). Stages: [BUILD.md](BUILD.md) stages 0–2.
+
 ## Step A — Letters
 
 One card: the Latin sign + a Cyrillic hint of the rough sound. The goal is to *picture* the sound, not to become a phonetician.
@@ -25,3 +27,25 @@ From these card sets the course picks up and raises difficulty. Situation tracks
 ## Fast path
 
 A learner who already maps the letters and the first words should not be forced to sit in A–C. Measure and skip.
+
+```mermaid
+flowchart TD
+  Start[First launch]
+  ProbeL[Letter probe: small sample]
+  ProbeW[Word-card probe]
+  A[Full Letters]
+  B[Full Word cards]
+  C[Kindergarten Q&A]
+  D[Situations / skills]
+  Start --> ProbeL
+  ProbeL -->|shaky / unknown| A
+  ProbeL -->|reliable| ProbeW
+  A --> ProbeW
+  ProbeW -->|shaky / unknown| B
+  ProbeW -->|reliable| C
+  B --> C
+  C -->|threshold met| D
+  C -->|still weak| C
+```
+
+**Decision:** “reliable” on a probe means ≥ 90% correct on a fixed 8–12 item sample in one sitting, with no hint spend. Thresholds are constants in `domain`, not per-user narrative flags.

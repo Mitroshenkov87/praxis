@@ -10,6 +10,8 @@ Each skill is a record, not a chapter. Fields to fill when authoring:
 - typical errors  
 - bans  
 
+**JSON schemas and three fully filled examples** (`price`, `refuse`, `unwell`) live in [DATA.md](DATA.md). Path convention: `content/skills/*.json`.
+
 ## Money and goods
 
 | id | task | success |
@@ -59,6 +61,23 @@ Each skill is a record, not a chapter. Fields to fill when authoring:
 - Detergent for two loads of laundry.
 - Price at the checkout.
 - Being offered a discount card at the till.
+
+### Shop frames (filled)
+
+Use these as the first authoring targets; full JSON for `price` and `refuse` is in [DATA.md](DATA.md).
+
+| Skill id | Frame pattern | Filled example (EN) | Task note (RU) |
+| --- | --- | --- | --- |
+| price | `How much is {object}?` | How much is this detergent? | Узнать цену на кассе |
+| price | `How much are {object_plural}?` | How much are these bottles? | Цена во мн. числе |
+| price | `How much does {object} cost?` | How much does this detergent cost? | Тот же смысл другим каркасом |
+| quantity | `I need {object} for {number} loads.` | I need detergent for two loads. | Порошок на две стирки |
+| quantity | `I need {number} {unit} of {object}.` | I need two bottles of detergent. | Количество + единица |
+| refuse | `No, thank you.` | No, thank you. | Короткий отказ |
+| refuse | `I don't need {object}.` | I don't need a discount card. | Отказ от карты на кассе |
+| refuse | `Not today, thank you.` | Not today, thank you. | Отказ без биографии |
+
+**Decision:** shop v1 content pack must ship `price`, `quantity`, and `refuse` at `accepted` (or `allowed_to_generate_from`) before the shop role is unlocked in the Situation picker.
 
 ## Out of first wave
 

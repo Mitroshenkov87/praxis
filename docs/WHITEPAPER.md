@@ -2,6 +2,8 @@
 
 A practical A1 trainer. Android. First pair: English for Russian speakers.
 
+Implementation maps: [ARCHITECTURE.md](ARCHITECTURE.md) · [DATA.md](DATA.md) · [SCREENS.md](SCREENS.md) · [BUILD.md](BUILD.md). Russian long cloth: [WHITEPAPER.ru.md](WHITEPAPER.ru.md).
+
 ## 1. Product sentence
 
 Praxis teaches a person to **do things** in a foreign language at the first functional floor (A1 or the same idea under another name). It does not teach them to inhabit a fictional life.
@@ -36,11 +38,15 @@ Each skill record:
 
 Content is stored as skills, frames, substitutions, audio references, and bans — not a book with plot chapters. Each item has a review status and a flag: may new examples be generated from it.
 
+Schemas and three filled examples (`price`, `refuse`, `unwell`): [DATA.md](DATA.md). Catalog list: [SKILLS.md](SKILLS.md).
+
 ## 4. Shell vs inside
 
 **Take from the familiar habit apps:** short session, visible skill path, review of what the person actually misses.
 
 **Do not take:** tone of a series, characters, memes, friend leagues, narrative lessons, “you are the hero.”
+
+Screen contracts: [SCREENS.md](SCREENS.md).
 
 ## 5. Layers of mechanics
 
@@ -52,7 +58,7 @@ Content is stored as skills, frames, substitutions, audio references, and bans �
 | 3 Situation drills | One skill, a few minutes: assemble, substitute, listen, speak | Only examples of a described skill |
 | 4 Goal dialogue | A few turns with an outside goal | Yes, filtered |
 
-A person who already knows some language skips 0–2 quickly.
+A person who already knows some language skips 0–2 quickly. Onboarding: [ONBOARDING.md](ONBOARDING.md).
 
 **Stars → hints.** Progress rewards can be converted into a hint when stuck.
 
@@ -79,7 +85,7 @@ Forbidden: characters; private-life questions; relationship jokes; praising the 
 
 Discard before display if: no checkable function; romantic/sexual fluff; feeling offered instead of action.
 
-Until a template passes the filter **and** a human editor, it is not course material.
+Until a template passes the filter **and** a human editor, it is not course material. Filter detail: [PEDAGOGY.md](PEDAGOGY.md).
 
 Offline: optional download of an open model into the app (one button). Same frames. We do not train our own LLM. We wrap ready STT / TTS / text-check models under the pedagogical filter. Not a chatting tutor — a **task tutor**.
 
@@ -91,12 +97,15 @@ See [ROLES.md](ROLES.md).
 
 ## 9. Platform and later pairs
 
-- v1: Android. One pair: English ← Russian UI.
+- v1: Android. One pair: English ← Russian UI. Layers: [ARCHITECTURE.md](ARCHITECTURE.md).
 - A second pair (e.g. German) only after the content pipeline and the fluff filter have proven stable on the first pair.
+- Signer when built: Aleksandr Mitroshenkov. MIT.
 
 ## 10. Acceptance (repeat)
 
 Two weeks of daily study, zero romance/plot/sex/family-serial/hero tasks. Then a dry exam of everyday actions. Dry + accurate = pass. Fun + inaccurate = fail.
+
+Concrete stage gates and checklist: [BUILD.md](BUILD.md).
 
 ## 11. What v1 does not include
 
